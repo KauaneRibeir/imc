@@ -4,8 +4,8 @@ let  n1 = Number(data.toString().trim());
     console.log("Digite a sua altura");
     process.stdin.once('data', function (data){
     let n2 = Number(data.toString().trim());
-    
-
+    imc =n1 / (n2*n2)
+    console.log("IMC = ", imc)
     if(imc < 18.5){
         console.log("Abaixo do peso")
         }else if (imc > 18.6 && imc < 24.9){
